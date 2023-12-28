@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="description" content="web development lessons">
+	<style>h1{color:#c34} span{color:green}</style>
+    <style>
+	  div{widht:500px;padding:10px;background:#DDD;boarder:1px solid #CCC;margin:10px 0}
+	</style>
+	<style>
+	  table caption {color:blue;font-weight:bold}
+	  table,td,tr,th{border:1px solid #676767
+	</style>
+    <style>
+	  table td {text-align:center}
+	  thead td {font-weight:bold;text-align:center;color:#FFF;background:#333;padding:5px}
+	  tfoot td {font-weight:bold;text-align:center;color:#F00;background:#DDD;padding:5px}
+	  tbody td {text-align:center;background:#EEE;padding:5px}
+	</style>
+    <style>
+	  .test
+	  {background:red ; color:white}
+	</style>
+	<link href="css/styles.css" rel="stylesheet">
+	<title>My Website</title>
+	<!--<script>alert("Welcome to my  page");</script>-->
+<script> function sayHello() {alert("Hello HTML");}</script>
+  </head>
+  <body>
+    <h1 id="home">My Website</h1>
+    <p>This is my first website</p>
+	<p>I will learn <abbr title="Cascading Style Sheets">CSS</abbr></p>
+	<div class="test">
+	  This is test div
+	</div>
+	<div class="block">
+	  <!--div tag a display block-->
+	  <p>i web developer</p>
+	  <!-- span tag a display inline-->
+	  i web<span> developer</span>
+	</div>
+	<div class="lists">
+	<h2>Web Disign</h2>
+	<ul>
+	  <li>HTML
+		<ol>
+		  <li>HTML4</li>
+		  <li>HTML5</li>
+		</ol>
+	  </li>
+	  <li>CSS</li>
+	  <li>JavaScript
+		<ul>
+		  <li>jQuery</li>
+		  <li>MooTools</li>
+		  <li>Dojo</li>
+		</ul>
+	  </li>
+	</ul>
+	<h2>Web Develop</h2>
+	<ol>
+	  <li>Python</li>
+	  <li>C++</li>
+	  <li>Java</li>
+	</ol>
+	<h2>Networks</h2>
+	<ol type="i">
+	<!--ol start="10"-->
+	<!--ol reversed-->
+	  <li>A+</li>
+	  <li>N+</li>
+	  <li>CCNA</li>
+	  <li>MCSE</li>
+	</ol>
+	</div>
+	<!--this is naruto image i scaled it to 900x600-->
+	<img src="images/naruto.jpg" alt="Naruto" width="900" height="600"><br>
+	<a href="https://www.facebook.com">Facebook</a><br>
+	<a href="#home">Home</a>
+	<table border="1" align="center" width="500">
+	  <caption class="test">My Web Skills</caption>
+	  <tr>
+	    <th>Date</th>
+	    <th>HTML</th>
+	    <th>CSS</th>
+	    <th>JavaScript</th>
+	  </tr>
+	  <tr>
+	    <th>November</th>
+		<td>Pass</td>
+		<td>No</td>
+		<td>No</td>
+	  </tr>
+	  <tr>
+	    <th>December</th>
+		<td></td>
+		<td></td>
+		<td></td>
+	  </tr>
+	</table> <br><br>
+	<table>
+	  <caption>Programing Language</caption>
+	  <thead>
+		<tr>
+		  <td>The Language</td>
+		  <td>C++</td>
+		  <td>Python</td>
+		  <td>PHP</td>
+		</tr>
+	  </thead>
+	  
+	  <tbody>
+		<tr>
+		  <th>Nov</th>
+		  <td>2 Lessons</td>
+		  <td>6 Lessons</td>
+		  <td>0 Lesson</td>
+		</tr>
+		<tr>
+		  <th>Dec</th>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		</tr>
+	  </tbody>
+	  
+	  <tfoot>
+		<tr>
+		  <td>Total</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		</tr>
+	  </tfoot>
+	</table>
+	<table align="center">
+	  <caption>Web Developer</caption>
+	  <thead>
+	  <tr>
+		<td colspan="3">Web Design</td>
+		<td colspan="2">Programing</td>
+	  </tr>
+	  </thead>
+	  <tr>
+		<td>HTML</td>
+		<td>CSS</td>
+		<td>Java Script</td>
+		<td rowspan="2">PHP</td>
+		<td rowspan="2">Python</td>
+	  </tr>
+	  <tr>
+		<td>HTML5</td>
+		<td>CSS3</td>
+		<td>JQuery</td>
+	  </tr>
+	</table><br><br><br>
+	<form name="register" action="post.php" method="post">
+	  <label>Username</label>
+	  <input name="username" type="text" value="" placeholder="Type your E-Mail" maxlength="25">
+	  <br>
+	  <label>Password</label>
+	  <input name="password" type="password" value="">
+	  <br>
+	  <label>Remember Me</label>
+	  <input type="checkbox">
+	  <input type="submit" value="Sign in">
+	  <br>
+	  <input type="button" name="Say Hello" value="Say Hello" onclick="sayHello()">
+	  <br>
+	  <input type="reset" value="Restore Default">
+	  <br>
+	  <input type="hidden" value="Testing">
+	  <br>
+	  <label>Choose Location</label>
+	  <input type="image" src="images/map.jpg" alt="no image" width="900" height="600">
+	  <br>
+	  <label>Upload Your CV</label>
+	  <input type="file" title="file">
+	  <fieldset>
+		<legend>Device</legend>
+		<label>Choose Your Mobile</label><br>
+		<input type="radio" name="mobile" value="iPhone">iPhone<br>
+		<input type="radio" name="mobile" value="Samsung">Samsung
+	  </fieldset>
+	  <fieldset>
+		<legend>Browser</legend>
+		<label>Choose Your Browser</label><br>
+		<input type="radio" name="browser" value="Chrome">Google Chrome<br>
+		<input type="radio" name="browser" value="Firefox">Mozilla Firefox
+	  </fieldset>
+	</form>
+	<br>
+	Mohammad &nbsp;&nbsp;&nbsp;Mohammad <br>
+	1&lt;2 <br>
+	4&gt;3 <br>
+	&lt;div class="top"&gt;
+	&lt;/div&gt;<br>
+	I&amp;You<br>
+	&cent;
+	&pound;
+	&yen;
+	&euro;
+	Copyright &copy;
+	Trademark &reg;
+	<br>
+	I Learning <abbr title="Hyper Text Markup Lamguage">HTML</abbr>
+	<iframe name="W3.org" src="https://www.w3.org"></iframe>
+	<iframe name="W3Schools.com" src="http://www.w3schools.com"></iframe>
+	
+	<script src="js/scripts.js"></script>
+  </body>
+</html>
